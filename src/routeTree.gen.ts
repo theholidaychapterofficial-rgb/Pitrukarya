@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WhyChooseUsRouteImport } from './routes/why-choose-us'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FacilitiesRouteImport } from './routes/facilities'
@@ -33,6 +34,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalleryRoute = GalleryRouteImport.update({
@@ -79,6 +85,7 @@ export interface FileRoutesByFullPath {
   '/facilities': typeof FacilitiesRoute
   '/faq': typeof FaqRoute
   '/gallery': typeof GalleryRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/why-choose-us': typeof WhyChooseUsRoute
@@ -91,6 +98,7 @@ export interface FileRoutesByTo {
   '/facilities': typeof FacilitiesRoute
   '/faq': typeof FaqRoute
   '/gallery': typeof GalleryRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/why-choose-us': typeof WhyChooseUsRoute
@@ -104,6 +112,7 @@ export interface FileRoutesById {
   '/facilities': typeof FacilitiesRoute
   '/faq': typeof FaqRoute
   '/gallery': typeof GalleryRoute
+  '/reviews': typeof ReviewsRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/why-choose-us': typeof WhyChooseUsRoute
@@ -118,6 +127,7 @@ export interface FileRouteTypes {
     | '/facilities'
     | '/faq'
     | '/gallery'
+    | '/reviews'
     | '/services'
     | '/sitemap.xml'
     | '/why-choose-us'
@@ -130,6 +140,7 @@ export interface FileRouteTypes {
     | '/facilities'
     | '/faq'
     | '/gallery'
+    | '/reviews'
     | '/services'
     | '/sitemap.xml'
     | '/why-choose-us'
@@ -142,6 +153,7 @@ export interface FileRouteTypes {
     | '/facilities'
     | '/faq'
     | '/gallery'
+    | '/reviews'
     | '/services'
     | '/sitemap.xml'
     | '/why-choose-us'
@@ -155,6 +167,7 @@ export interface RootRouteChildren {
   FacilitiesRoute: typeof FacilitiesRoute
   FaqRoute: typeof FaqRoute
   GalleryRoute: typeof GalleryRoute
+  ReviewsRoute: typeof ReviewsRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   WhyChooseUsRoute: typeof WhyChooseUsRoute
@@ -181,6 +194,13 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gallery': {
@@ -243,6 +263,7 @@ const rootRouteChildren: RootRouteChildren = {
   FacilitiesRoute: FacilitiesRoute,
   FaqRoute: FaqRoute,
   GalleryRoute: GalleryRoute,
+  ReviewsRoute: ReviewsRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   WhyChooseUsRoute: WhyChooseUsRoute,
