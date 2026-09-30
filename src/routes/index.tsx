@@ -6,6 +6,9 @@ import { ImportanceSection } from "@/components/sections/ImportanceSection";
 import { BookingStepsSection } from "@/components/sections/BookingStepsSection";
 import { WhyUsSection } from "@/components/sections/WhyUsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { FacilitiesSection } from "@/components/sections/FacilitiesSection";
+import { GallerySection } from "@/components/sections/GallerySection";
+import { TrustStrip, CeremonyFeature, EntranceFeature } from "@/components/sections/VenueSections";
 
 const TITLE = "Pitrukarya | Authentic Pitru Karma & Shraddha Services";
 const DESC =
@@ -34,12 +37,17 @@ function Index() {
   return (
     <>
       <Hero />
+      <TrustStrip />
       <AboutSection />
       <ServicesSection compact />
       <ImportanceSection />
-      <BookingStepsSection />
+      <FacilitiesSection />
+      <CeremonyFeature />
+      <EntranceFeature />
       <WhyUsSection />
+      <BookingStepsSection />
       <TestimonialsSection />
+      <GallerySection />
     </>
   );
 }
