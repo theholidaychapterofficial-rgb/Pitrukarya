@@ -4,6 +4,7 @@ import { useLang } from "@/i18n/LanguageProvider";
 import { CONTACT } from "@/lib/contact";
 import { MapPin, Phone, MessageCircle } from "lucide-react";
 import { EnquiryForm } from "./EnquiryForm";
+import { ExteriorCard } from "./VenueSections";
 
 export function ContactSection() {
   const { t } = useLang();
@@ -66,6 +67,7 @@ export function ContactSection() {
               </div>
             </div>
 
+            <ExteriorCard />
             <div className="overflow-hidden rounded-2xl border border-border/60 shadow-[var(--shadow-soft)]">
               <iframe
                 title="Google Maps"

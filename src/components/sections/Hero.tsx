@@ -1,17 +1,19 @@
 import { Link } from "@tanstack/react-router";
+import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLang } from "@/i18n/LanguageProvider";
-import heroImg from "@/assets/hero-ritual.jpg";
+import { CONTACT } from "@/lib/contact";
+import heroImg from "@/assets/venue-hall-wide.jpg";
 
 export function Hero() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt=""
-          className="h-full w-full object-cover"
+          alt={lang === "kn" ? "ಶ್ರೀ ಚಿದಂಬರ ಶ್ರಾದ್ಧಭವನದ ವಿಶಾಲ ಒಳಾಂಗಣ" : "Spacious interior hall of Shri Chidambara Shraddha Bhavan"}
+          className="h-full w-full object-cover object-[50%_45%]"
           width={1920}
           height={1200}
           fetchPriority="high"
@@ -46,9 +48,18 @@ export function Hero() {
             variant="maroon"
             className="min-w-[240px] border-2 border-white/60 bg-white px-8 py-6 text-base font-semibold text-primary shadow-[var(--shadow-elegant)] transition-transform hover:scale-[1.02] hover:bg-white/95 sm:text-lg"
           >
-            <Link to="/contact">✉ {t.hero.contact}</Link>
+            <Link to="/contact">📞 {t.hero.contact}</Link>
           </Button>
         </div>
+        <a
+          href={CONTACT.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/95 underline-offset-4 hover:underline sm:text-base"
+        >
+          <MessageCircle className="h-4 w-4" aria-hidden />
+          {lang === "kn" ? "WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ" : "Enquire on WhatsApp"}
+        </a>
       </div>
     </section>
   );
