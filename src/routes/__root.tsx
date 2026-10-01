@@ -43,7 +43,7 @@ function ErrorComponent({ error, reset }: import("@tanstack/react-router").Error
   const router = useRouter();
   useEffect(() => {
     // Stale chunk after a new deploy — hard reload once to fetch the new asset manifest.
-    const msg = error?.message ?? "";
+    const msg = error instanceof Error ? error.message : String(error ?? "");
     if (/Failed to fetch dynamically imported module|Importing a module script failed/i.test(msg)) {
       const KEY = "__chunk_reload__";
       if (typeof window !== "undefined" && !sessionStorage.getItem(KEY)) {
