@@ -14,7 +14,7 @@ export function TestimonialsSection() {
             <Card key={item.name} className="temple-border border-transparent bg-card shadow-[var(--shadow-soft)]">
               <CardContent className="p-6">
                 <Quote className="h-8 w-8 text-accent" aria-hidden />
-                <p className="mt-4 font-serif text-lg italic leading-relaxed text-foreground/90">
+                <p className="mt-4 whitespace-pre-line break-words font-serif text-lg italic leading-relaxed text-foreground/90">
                   “{item.quote}”
                 </p>
                 <p className="mt-6 text-sm font-medium text-primary">— {item.name}</p>
