@@ -42,6 +42,9 @@
   --color-ivory: var(--ivory);
   --color-sandstone: var(--sandstone);
   --color-brown: var(--brown);
+  --color-hero-foreground: var(--hero-foreground);
+  --color-hero-button: var(--hero-button);
+  --color-whatsapp: var(--whatsapp);
   --font-serif: "Cormorant Garamond", "Noto Serif Kannada", Georgia, serif;
   --font-body: "Inter", "Noto Sans Kannada", system-ui, sans-serif;
   --font-kannada: "Noto Serif Kannada", "Noto Sans Kannada", serif;
@@ -63,6 +66,11 @@
   --saffron: oklch(0.68 0.18 55);
   --maroon: oklch(0.32 0.11 25);
   --brown: oklch(0.28 0.045 45);
+  --hero-foreground: oklch(1 0 0);
+  --hero-button: oklch(1 0 0);
+  --whatsapp: oklch(0.68 0.16 150);
+  --hero-readability: linear-gradient(180deg, color-mix(in oklab, var(--brown) 24%, transparent), color-mix(in oklab, var(--brown) 14%, transparent) 58%, transparent);
+  --hero-text-shadow: 0 2px 5px color-mix(in oklab, var(--brown) 65%, transparent);
 
   --background: var(--ivory);
   --foreground: oklch(0.22 0.03 40);
@@ -138,6 +146,12 @@
     font-family: var(--font-kannada);
     font-weight: 600;
   }
+}
+
+.hero-heading {
+  text-shadow: var(--hero-text-shadow);
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 /* Subtle traditional pattern backdrop */

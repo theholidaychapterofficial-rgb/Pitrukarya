@@ -23,12 +23,12 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6">
-        <Link to="/" className="flex min-w-0 items-center gap-3">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-2 px-4 py-2 sm:flex sm:gap-4 sm:px-6 sm:py-3">
+        <Link to="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
           <img
             src={logoUrl}
             alt={`${t.meta.siteName} logo`}
-            className="h-12 w-12 shrink-0 rounded-full object-cover shadow-[var(--shadow-soft)] sm:h-14 sm:w-14"
+             className="h-11 w-11 shrink-0 rounded-full object-cover shadow-[var(--shadow-soft)] sm:h-14 sm:w-14"
             width={56}
             height={56}
           />
@@ -59,7 +59,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2 lg:ml-2">
+        <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-2 lg:ml-2">
           <LangSwitcher lang={lang} setLang={setLang} />
           <Button asChild variant="temple" size="sm" className="hidden md:inline-flex">
             <Link to="/booking">{t.nav.book}</Link>
