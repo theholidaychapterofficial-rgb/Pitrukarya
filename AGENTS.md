@@ -10,4 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep hero readability tokens in the global stylesheet and reuse the shared Button component so presentation stays theme-consistent.
-- While the homepage hero is visible, portal contact actions into its reserved bottom area; restore fixed actions beyond the hero to prevent CTA overlap without losing contact access.
+- Floating contact actions stay fixed and compact; the hero reserves bottom padding so they never cover its CTAs (no portals — they break SSR hydration).

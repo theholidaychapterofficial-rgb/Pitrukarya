@@ -2,7 +2,7 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { useLang } from "@/i18n/LanguageProvider";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles } from "lucide-react";
-import wallImg from "@/assets/venue-spiritual-wall.jpg";
+import wallImg from "@/assets/venue-hall-gathering.jpg";
 
 export function AboutSection() {
   const { t } = useLang();
@@ -13,7 +13,7 @@ export function AboutSection() {
 
         <div className="mt-12 grid items-center gap-10 lg:grid-cols-2">
           <div className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)]">
-            <img src={wallImg} alt="ಪೂಜಾ ಸ್ಥಳದ ಸಾಂಪ್ರದಾಯಿಕ ಅಲಂಕಾರ — Traditional spiritual wall and seat" loading="lazy" className="aspect-[4/5] w-full object-cover sm:aspect-[4/3] lg:aspect-[4/5]" />
+            <img src={wallImg} alt="ಕುಟುಂಬಗಳು ಸೇರಿರುವ ಶ್ರಾದ್ಧಭವನದ ವಿಶಾಲ ಸಭಾಂಗಣ — The spacious Bhavan hall with families gathered for a ceremony" loading="lazy" className="aspect-[4/3] w-full object-cover object-[50%_60%] lg:aspect-[4/5]" />
           </div>
           <p className="text-base leading-relaxed text-foreground/85 sm:text-lg">{t.about.body}</p>
         </div>

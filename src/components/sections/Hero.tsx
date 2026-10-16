@@ -62,7 +62,6 @@ export function Hero() {
           {lang === "kn" ? "WhatsApp ಮೂಲಕ ವಿಚಾರಿಸಿ" : "Enquire on WhatsApp"}
         </a>
       </div>
-      <div id="hero-contact-actions" className="absolute bottom-4 right-4 z-30 lg:bottom-6 lg:right-6" />
     </section>
   );
 }
