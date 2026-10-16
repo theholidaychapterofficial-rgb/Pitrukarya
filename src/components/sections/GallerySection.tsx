@@ -46,7 +46,7 @@ export function GallerySection() {
     <section id="gallery" className="pattern-bg py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading eyebrow={t.gallery.eyebrow} title={t.gallery.title} subtitle={t.gallery.subtitle} />
-        <div className="mt-12 grid auto-rows-[220px] grid-cols-1 gap-3 sm:grid-cols-4">
+        <div className="mt-12 grid auto-rows-[220px] grid-flow-dense grid-cols-1 gap-3 sm:grid-cols-4">
           {items.map((it, i) => (
             <figure key={i} className={`group relative overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)] ${it.cls}`}>
               <button type="button" onClick={() => setOpen(i)} className="block h-full w-full" aria-label={it.caption}>
