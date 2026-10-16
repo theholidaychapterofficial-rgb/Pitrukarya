@@ -3,7 +3,8 @@ import { BookOpen, Users, Wind, Package, MapPin, Phone, MessageCircle } from "lu
 import { Button } from "@/components/ui/button";
 import { useLang } from "@/i18n/LanguageProvider";
 import { CONTACT } from "@/lib/contact";
-import ceremony from "@/assets/venue-ceremony.jpg";
+import ceremony from "@/assets/venue-ritual-priests.jpg";
+import prasada from "@/assets/venue-prasada.jpg";
 import entrance from "@/assets/venue-entrance.jpg";
 import exterior from "@/assets/venue-exterior.jpg";
 import hallWide from "@/assets/venue-hall-wide.jpg";
@@ -61,7 +62,7 @@ export function CeremonyFeature() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Split
           img={ceremony}
-          alt={kn ? "ಶ್ರೀ ಚಿದಂಬರ ಶ್ರಾದ್ಧಭವನದಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಪಿತೃಕಾರ್ಯ" : "A Pitrukarya ceremony in progress at Shri Chidambara Shraddha Bhavan"}
+          alt={kn ? "ಭವನದಲ್ಲಿ ವೇದವಿದ್ವಾಂಸರು ಪಿತೃಕಾರ್ಯ ನೆರವೇರಿಸುತ್ತಿರುವುದು" : "Priests conducting a Pitrukarya ritual with a family at the Bhavan"}
           eyebrow={kn ? "ಭವನದಲ್ಲಿ ನೆರವೇರಿಸಲಾಗುವ ಕಾರ್ಯಗಳು" : "Ceremonies at the Bhavan"}
           title={kn ? "ಶ್ರದ್ಧೆಯಿಂದ ಪಿತೃಸೇವೆ" : "Pitru seva with devotion"}
           body={kn
@@ -117,6 +118,10 @@ export function FacilityPhotos() {
       <figure className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)]">
         <img src={hallView} alt={kn ? "ಪ್ರತ್ಯೇಕ ಕಾರ್ಯಸ್ಥಳಗಳು ಹಾಗೂ ಸ್ವಚ್ಛ ಕಲ್ಲಿನ ನೆಲ" : "Separate ritual spaces and clean stone flooring"} loading="lazy" className="aspect-[4/3] w-full object-cover" />
         <figcaption className="bg-card px-4 py-3 text-sm text-muted-foreground">{kn ? "ಪ್ರತ್ಯೇಕ ಕಾರ್ಯಸ್ಥಳಗಳು ಹಾಗೂ ಸ್ವಚ್ಛ ಕಲ್ಲಿನ ನೆಲ" : "Separate ritual spaces and clean stone flooring"}</figcaption>
+      </figure>
+      <figure className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)] md:col-span-2">
+        <img src={prasada} alt={kn ? "ಸಭಾಂಗಣದಲ್ಲಿ ಬಾಳೆಎಲೆಯ ಮೇಲೆ ಭೋಜನ ಸ್ವೀಕರಿಸುತ್ತಿರುವ ಕುಟುಂಬಗಳು" : "Families seated at long tables for a traditional meal on banana leaves in the hall"} loading="lazy" className="aspect-[4/3] w-full object-cover md:aspect-[16/7]" />
+        <figcaption className="bg-card px-4 py-3 text-sm text-muted-foreground">{kn ? "ಬಾಳೆಎಲೆಯ ಮೇಲೆ ಸಾಂಪ್ರದಾಯಿಕ ಭೋಜನ" : "Traditional bhojana served on banana leaf"}</figcaption>
       </figure>
     </div>
   );
