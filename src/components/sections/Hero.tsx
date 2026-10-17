@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLang } from "@/i18n/LanguageProvider";
 import { CONTACT } from "@/lib/contact";
-import heroImg from "@/assets/venue-hall-wide.jpg";
+import heroPhoto from "@/assets/venue-chair-original.jpg.asset.json";
 
 export function Hero() {
   const { t, lang } = useLang();
@@ -11,17 +11,17 @@ export function Hero() {
     <section id="home-hero" className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={heroImg}
-          alt={lang === "kn" ? "ಶ್ರೀ ಚಿದಂಬರ ಶ್ರಾದ್ಧಭವನದ ವಿಶಾಲ ಒಳಾಂಗಣ" : "Spacious interior hall of Shri Chidambara Shraddha Bhavan"}
-          className="h-full w-full object-cover object-[50%_45%]"
-          width={1920}
-          height={1200}
+          src={heroPhoto.url}
+          alt={lang === "kn" ? "ಶ್ರೀ ಚಿದಂಬರ ಶ್ರಾದ್ಧಭವನದ ಸಾಂಪ್ರದಾಯಿಕ ಮರದ ಆಸನ ಮತ್ತು ಧಾರ್ಮಿಕ ಚಿತ್ರಗಳು" : "Traditional wooden seat and framed religious portraits at Shri Chidambara Shraddha Bhavan"}
+          className="h-full w-full object-cover object-[50%_55%] lg:object-[50%_60%]"
+          width={1440}
+          height={1920}
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-[image:var(--hero-readability)]" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[calc(100svh-64px)] max-w-6xl flex-col items-center justify-center px-4 pb-24 pt-10 text-center text-hero-foreground sm:px-6 sm:pb-24 sm:pt-14 lg:min-h-[760px] lg:py-16">
+      <div className="relative mx-auto flex min-h-[calc(100svh-100px)] max-w-6xl flex-col items-center justify-center px-4 pb-24 pt-10 text-center text-hero-foreground sm:px-6 sm:pb-24 sm:pt-14 lg:min-h-[860px] lg:py-20">
         <span className="mb-4 rounded-full border border-hero-foreground/25 bg-brown/20 px-4 py-1.5 text-xs font-medium tracking-normal backdrop-blur-sm">
           {t.hero.eyebrow}
         </span>

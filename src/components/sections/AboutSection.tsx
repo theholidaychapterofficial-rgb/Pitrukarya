@@ -13,7 +13,7 @@ export function AboutSection() {
 
         <div className="mt-12 grid items-center gap-10 lg:grid-cols-2">
           <div className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)]">
-            <img src={wallImg} alt="ಕುಟುಂಬಗಳು ಸೇರಿರುವ ಶ್ರಾದ್ಧಭವನದ ವಿಶಾಲ ಸಭಾಂಗಣ — The spacious Bhavan hall with families gathered for a ceremony" loading="lazy" className="aspect-[4/3] w-full object-cover object-[50%_60%] lg:aspect-[4/5]" />
+            <img src={wallImg} alt="ಕುಟುಂಬಗಳು ಸೇರಿರುವ ಶ್ರಾದ್ಧಭವನದ ವಿಶಾಲ ಸಭಾಂಗಣ — The spacious Bhavan hall with families gathered for a ceremony" loading="lazy" className="aspect-[4/3] w-full object-cover" />
           </div>
           <p className="text-base leading-relaxed text-foreground/85 sm:text-lg">{t.about.body}</p>
         </div>
