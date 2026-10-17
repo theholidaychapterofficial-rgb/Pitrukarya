@@ -9,6 +9,9 @@ import entrance from "@/assets/venue-entrance.jpg";
 import exterior from "@/assets/venue-exterior.jpg";
 import hallWide from "@/assets/venue-hall-wide.jpg";
 import hallView from "@/assets/venue-hall-view.jpg";
+import ritualDetail from "@/assets/venue-ceremony-detail.jpg";
+import families from "@/assets/venue-gathering.jpg";
+import dining from "@/assets/venue-prasada-wide.jpg";
 
 export function TrustStrip() {
   const { lang } = useLang();
@@ -41,7 +44,7 @@ function Split({
   return (
     <div className={`grid items-center gap-10 lg:grid-cols-2 ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
       <div className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)]">
-        <img src={img} alt={alt} loading="lazy" className="aspect-[4/3] h-full w-full object-cover" />
+        <img src={img} alt={alt} loading="lazy" className="aspect-[4/3] w-full object-cover" />
       </div>
       <div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">{eyebrow}</p>
@@ -112,15 +115,15 @@ export function FacilityPhotos() {
   return (
     <div className="mt-12 grid gap-4 md:grid-cols-2">
       <figure className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)]">
-        <img src={hallWide} alt={kn ? "ಶ್ರೀ ಚಿದಂಬರ ಶ್ರಾದ್ಧಭವನದ ವಿಶಾಲ ಒಳಾಂಗಣ" : "Spacious interior hall of the Bhavan"} loading="lazy" className="aspect-[4/3] w-full object-cover" />
-        <figcaption className="bg-card px-4 py-3 text-sm text-muted-foreground">{kn ? "ವಿಶಾಲ ಸಭಾಂಗಣ, ಗಾಳಿ-ಬೆಳಕಿನ ಕಿಟಕಿಗಳು ಹಾಗೂ ಫ್ಯಾನ್‌ಗಳು" : "Spacious hall with windows for light and air, and ceiling fans"}</figcaption>
+        <img src={ritualDetail} alt={kn ? "ಪೂಜಾ ಸಾಮಗ್ರಿಗಳೊಂದಿಗೆ ಪಿತೃಕಾರ್ಯದಲ್ಲಿ ತೊಡಗಿರುವ ವೇದವಿದ್ವಾಂಸರು" : "Priests performing a ritual with puja materials"} loading="lazy" className="aspect-[3/4] w-full object-cover sm:aspect-[4/3]" />
+        <figcaption className="bg-card px-4 py-3 text-sm text-muted-foreground">{kn ? "ಪಿತೃಕಾರ್ಯದ ವಿಧಿಗಳು ಮತ್ತು ಪೂಜಾ ಸಾಮಗ್ರಿಗಳು" : "Ritual proceedings and puja materials"}</figcaption>
       </figure>
       <figure className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)]">
-        <img src={hallView} alt={kn ? "ಪ್ರತ್ಯೇಕ ಕಾರ್ಯಸ್ಥಳಗಳು ಹಾಗೂ ಸ್ವಚ್ಛ ಕಲ್ಲಿನ ನೆಲ" : "Separate ritual spaces and clean stone flooring"} loading="lazy" className="aspect-[4/3] w-full object-cover" />
-        <figcaption className="bg-card px-4 py-3 text-sm text-muted-foreground">{kn ? "ಪ್ರತ್ಯೇಕ ಕಾರ್ಯಸ್ಥಳಗಳು ಹಾಗೂ ಸ್ವಚ್ಛ ಕಲ್ಲಿನ ನೆಲ" : "Separate ritual spaces and clean stone flooring"}</figcaption>
+        <img src={families} alt={kn ? "ಸಭಾಂಗಣದಲ್ಲಿ ಕಾರ್ಯದಲ್ಲಿ ಭಾಗವಹಿಸಿರುವ ಕುಟುಂಬಗಳು" : "Families participating in a ceremony in the hall"} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+        <figcaption className="bg-card px-4 py-3 text-sm text-muted-foreground">{kn ? "ಕಾರ್ಯದಲ್ಲಿ ಭಾಗವಹಿಸಿರುವ ಕುಟುಂಬಗಳು" : "Families gathered for a ceremony"}</figcaption>
       </figure>
       <figure className="overflow-hidden rounded-xl border border-border/60 shadow-[var(--shadow-soft)] md:col-span-2">
-        <img src={prasada} alt={kn ? "ಸಭಾಂಗಣದಲ್ಲಿ ಬಾಳೆಎಲೆಯ ಮೇಲೆ ಭೋಜನ ಸ್ವೀಕರಿಸುತ್ತಿರುವ ಕುಟುಂಬಗಳು" : "Families seated at long tables for a traditional meal on banana leaves in the hall"} loading="lazy" className="aspect-[4/3] w-full object-cover md:aspect-[16/7]" />
+        <img src={dining} alt={kn ? "ಸಭಾಂಗಣದಲ್ಲಿ ಬಾಳೆಎಲೆಯ ಮೇಲೆ ಭೋಜನ ಸ್ವೀಕರಿಸುತ್ತಿರುವ ಕುಟುಂಬಗಳು" : "Families seated at long tables for a traditional meal on banana leaves in the hall"} loading="lazy" className="aspect-[4/3] w-full object-cover" />
         <figcaption className="bg-card px-4 py-3 text-sm text-muted-foreground">{kn ? "ಬಾಳೆಎಲೆಯ ಮೇಲೆ ಸಾಂಪ್ರದಾಯಿಕ ಭೋಜನ" : "Traditional bhojana served on banana leaf"}</figcaption>
       </figure>
     </div>

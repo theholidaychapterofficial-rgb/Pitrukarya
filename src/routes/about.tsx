@@ -12,6 +12,7 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "About Pitrukarya | Shri Chidambara Shraddha Bhavan under Shri Kanva Matha — a sacred space in Yelahanka, Bengaluru dedicated to Pitru Karyas per Vedic tradition." },
       { property: "og:title", content: "About | Pitrukarya | Shri Chidambara Shraddha Bhavan" },
       { property: "og:description", content: "Learn about the tradition, priests and philosophy of the Bhavan." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],

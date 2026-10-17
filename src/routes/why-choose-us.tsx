@@ -11,6 +11,7 @@ export const Route = createFileRoute("/why-choose-us")({
       { name: "description", content: "Shastra-compliant rituals, experienced Vedic scholars, complete end-to-end assistance and a peaceful environment for every Pitru Karya." },
       { property: "og:title", content: "Why Choose Us | Pitrukarya | Shri Chidambara Shraddha Bhavan" },
       { property: "og:description", content: "Trust rooted in tradition." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/why-choose-us" },
     ],
     links: [{ rel: "canonical", href: "/why-choose-us" }],

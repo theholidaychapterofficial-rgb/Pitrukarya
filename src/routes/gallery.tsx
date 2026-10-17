@@ -10,6 +10,7 @@ export const Route = createFileRoute("/gallery")({
       { name: "description", content: "Glimpses of Vedic rituals, kalasha, darbha, til, Pinda Pradana, dining arrangements and the prayer hall at the Bhavan." },
       { property: "og:title", content: "Gallery | Pitrukarya | Shri Chidambara Shraddha Bhavan" },
       { property: "og:description", content: "Sacred rituals and the spiritual ambience of the Bhavan." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/gallery" },
     ],
     links: [{ rel: "canonical", href: "/gallery" }],

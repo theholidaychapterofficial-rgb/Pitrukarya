@@ -11,3 +11,4 @@
 
 - Keep hero readability tokens in the global stylesheet and reuse the shared Button component so presentation stays theme-consistent.
 - Floating contact actions stay fixed and compact; the hero reserves bottom padding so they never cover its CTAs (no portals — they break SSR hydration).
+- Gallery filters use stable photo IDs and filter the same photo list used by lightbox navigation, so category changes cannot show unrelated images.

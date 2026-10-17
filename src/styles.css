@@ -69,7 +69,7 @@
   --hero-foreground: oklch(1 0 0);
   --hero-button: oklch(1 0 0);
   --whatsapp: oklch(0.68 0.16 150);
-  --hero-readability: linear-gradient(180deg, color-mix(in oklab, var(--brown) 24%, transparent), color-mix(in oklab, var(--brown) 14%, transparent) 58%, transparent);
+  --hero-readability: radial-gradient(ellipse at 50% 42%, color-mix(in oklab, var(--brown) 38%, transparent), color-mix(in oklab, var(--brown) 22%, transparent) 55%, transparent 90%);
   --hero-text-shadow: 0 2px 5px color-mix(in oklab, var(--brown) 65%, transparent);
 
   --background: var(--ivory);

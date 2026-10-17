@@ -11,6 +11,7 @@ export const Route = createFileRoute("/booking")({
       { name: "description", content: "Reserve your Pitru Karya ceremony at Pitrukarya | Shri Chidambara Shraddha Bhavan, Yelahanka. Advance booking recommended, especially during Mahalaya Paksha." },
       { property: "og:title", content: "Book a Ceremony | Pitrukarya | Shri Chidambara Shraddha Bhavan" },
       { property: "og:description", content: "Simple steps to reserve your ceremony." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/booking" },
     ],
     links: [{ rel: "canonical", href: "/booking" }],
