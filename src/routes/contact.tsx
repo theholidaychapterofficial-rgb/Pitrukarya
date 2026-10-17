@@ -10,6 +10,7 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Contact Pitrukarya | Shri Chidambara Shraddha Bhavan, Shri Kanva Matha, Sante Beedi, Yelahanka, Bengaluru — 560064. Phone: +91 97405 13665." },
       { property: "og:title", content: "Contact | Pitrukarya | Shri Chidambara Shraddha Bhavan" },
       { property: "og:description", content: "Reach out to the Bhavan for ceremonies and enquiries." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],

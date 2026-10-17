@@ -10,6 +10,7 @@ export const Route = createFileRoute("/facilities")({
       { name: "description", content: "Spacious Shraddha hall, dining area, dedicated Pinda Pradana and tarpana spaces, parking, comfortable seating and complete ritual setup at the Bhavan." },
       { property: "og:title", content: "Facilities | Pitrukarya | Shri Chidambara Shraddha Bhavan" },
       { property: "og:description", content: "Everything arranged with care for a peaceful ceremony." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/facilities" },
     ],
     links: [{ rel: "canonical", href: "/facilities" }],

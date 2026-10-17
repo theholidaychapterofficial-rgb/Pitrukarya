@@ -13,7 +13,8 @@ export const Route = createFileRoute("/faq")({
         { name: "description", content: "Answers to common questions about ceremonies, booking, Brahmin arrangements, puja materials and facilities at the Bhavan." },
         { property: "og:title", content: "FAQs | Pitrukarya | Shri Chidambara Shraddha Bhavan" },
         { property: "og:description", content: "Answers to the most common questions from families." },
-        { property: "og:url", content: "/faq" },
+        { property: "og:type", content: "website" },
+      { property: "og:url", content: "/faq" },
       ],
       links: [{ rel: "canonical", href: "/faq" }],
       scripts: [
